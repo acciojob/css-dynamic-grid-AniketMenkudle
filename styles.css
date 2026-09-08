@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+.grid-container {
+  display: grid;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /* Space between cards */
+  gap: 20px;
+
+  /* Center the grid itself */
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 40px;
+
+  /* Center content inside each card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
